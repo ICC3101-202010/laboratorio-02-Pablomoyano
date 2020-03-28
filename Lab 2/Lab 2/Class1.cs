@@ -12,17 +12,17 @@ namespace Lab_2
         private string Album;
         private string Artist;
         private string Genre;
-        public Canción(string Namesong, string Albumsong, string Artistsong, string Genresong)
+        public Canción(string Name, string Album, string Artist, string Genre)
         {
-            Name = Namesong;
-            Album = Albumsong;
-            Artist = Artistsong;
-            Genre = Genresong;
+            this.Name = Name;
+            this.Album = Album;
+            this.Artist = Artist;
+            this.Genre = Genre;
         }
-        public string Informacion(string Namesong, string Albumsong,string Artistsong,string Genresong)
+        public string Informacion()
         {
-            string info = "genero:" + Genresong + ", artista:" + Artistsong + ", album:" + Albumsong + ", nombre:" + Namesong;
-            return info;
+            string informa="genero:" + Genre + " ,artista:" + Artist + " ,album:" + Album + " ,nombre:" + Name;
+            return informa;
           }
          
 
