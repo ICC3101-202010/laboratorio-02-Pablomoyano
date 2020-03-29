@@ -16,13 +16,31 @@ namespace Lab_2
             Console.WriteLine("1:Ver las canciones,");
             Console.WriteLine("2:Agregar canción"); 
             Console.WriteLine("3:Salir del menu");
-            choice = Convert.ToInt32(Console.ReadLine());
+            choice = Convert.ToInt32(Console.ReadKey());
             while (choice != 3) 
             {if (choice==1)
-                {foreach (string element in listamusical)
+                {
+                    string muestra;
+                    Espotifai muestralista = new Espotifai();
+                    muestra = muestralista.VerCanciones();
                         }
              else if (choice==2)
-                { }
+                { 
+                    string nam;
+                    string alb;
+                    string ar;
+                    string gen;
+                   Console.WriteLine("Escriba el nombre de la cancion");
+                    nam = Console.ReadLine();
+                    Console.WriteLine("Escriba el album de la cancion");
+                    alb = Console.ReadLine();
+                    Console.WriteLine("Escriba el nombre del artista");
+                    ar = Console.ReadLine();
+                    Console.WriteLine("Escriba el genero de la cancion");
+                    gen=Console.ReadLine()
+
+
+                }
              
             }
             Console.WriteLine("Gracias por usar el programa");
