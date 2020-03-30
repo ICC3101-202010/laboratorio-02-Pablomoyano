@@ -73,14 +73,17 @@ namespace Lab_2
                         recopilacion.Add(listamusical[h - 3]);
                     h = h + 4;
                 }
-                int finalsize = recopilacion.Count;
-                if (finalsize>0)
-                { return recopilacion; }
-                else
-                { return vacio;
-                    Console.WriteLine("Ninguna cancion cumple con lo solicitado,porfavor de un nuevo criterio");
-                }
+                
+
             }
+            int finalsize = recopilacion.Count;
+            if (finalsize == 0)
+
+            {
+                Console.WriteLine("Ninguna cancion cumple con lo solicitado,porfavor de un nuevo criterio");
+                return vacio;
+            }
+            return recopilacion;
         }
         public bool GenerarPlaylist(String criterio, String valorCriterio, String nombrePlaylist)
         { }

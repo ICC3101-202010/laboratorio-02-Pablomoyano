@@ -43,8 +43,8 @@ namespace Lab_2
                     gen = Console.ReadLine();
                     Canción newadd = new Canción(nam, alb, ar, gen);
                     Espotifai anade = new Espotifai();
-                    delta=newadd.Informacion();
-                    anade.CancionesPorCriterio(delta);
+                    newadd.Informacion();
+                    anade.AgregarCancion(newadd.Informacion);
 
 
 
