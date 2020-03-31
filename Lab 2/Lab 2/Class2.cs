@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace Lab_2
 {
     public class Espotifai
-    {public Espotifai()
+    { private string nameplayli;
+        public Espotifai()
         { }
-        List<string> listamusical = new List<string>() ;
+         List<string> listamusical = new List<string>() ;
         public bool AgregarCancion(Canción cancion)
         {
             
@@ -86,7 +87,7 @@ namespace Lab_2
             return recopilacion;
         }
         public bool GenerarPlaylist(String criterio, String valorCriterio, String nombrePlaylist)
-        { }
+        { if (}
         public String VerMisPlaylists()
         { }
     }

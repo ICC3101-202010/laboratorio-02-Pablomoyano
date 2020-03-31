@@ -41,10 +41,15 @@ namespace Lab_2
                     ar = Console.ReadLine();
                     Console.WriteLine("Escriba el genero de la cancion");
                     gen = Console.ReadLine();
-                    Canción newadd = new Canción(nam, alb, ar, gen);
-                    Espotifai anade = new Espotifai();
-                    newadd.Informacion();
-                    anade.AgregarCancion(newadd.Informacion);
+                    List<string> reco = new List<string>();
+                    reco.Add(nam);
+                    reco.Add(alb);
+                    reco.Add(ar);
+                    reco.Add(gen);
+                    foreach(string element in reco)
+                    { Espotifai cl = new Espotifai();
+                        cl.AgregarCancion(element);
+                    }
 
 
 
@@ -63,7 +68,11 @@ namespace Lab_2
                     nuevalista.CancionesPorCriterio(crit, valo);
                 }
                 else if(choice==5)
-                { }
+                { Console.WriteLine("Inserte el nombre para la playlist:");
+                    string playlili;
+                    playlili = Console.ReadLine();
+
+                }
                 else if(choice==6)
                 { }
 

@@ -10,5 +10,18 @@ namespace Lab_2
 
     {
         private string nombreplaylist;
+        List<string> songs = new List<string>();
+        
+
+        
+        public Playlist(string nombreplaylist, string cancionnombre, string cancionartista, string cancionalbum,string canciongenero)
+        { this.nombreplaylist = nombreplaylist;
+          }
+        public string infoplaylist()
+        {
+            string infloplay = "Playlist;" + nombreplaylist + 
+                "Canciones:"+
+       return infloplay;    }
     }
+
 }
